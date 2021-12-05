@@ -1,2 +1,2 @@
-# painjs_2021
+# paintjs_2021
 Painting Board made with VanillaJS
