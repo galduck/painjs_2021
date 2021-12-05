@@ -1,0 +1,64 @@
+@import "reset.css";
+
+body {
+  background-color: wheat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  margin-bottom: 30px;
+}
+
+.controls__btns button {
+  all: unset; /* 버튼에 있는 css적 효과들 다 없애기 */
+  cursor: pointer;
+  background-color: white;
+  padding: 7px 0px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  text-transform: uppercase; /* 대문자 */
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.controls__btns button:active {
+  transform: scale(0.97); /* 버튼 클릭 시 두근두근 */
+}
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls .controls__range {
+  margin-bottom: 20px;
+}
